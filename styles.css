@@ -5,6 +5,9 @@ html, body{
     margin: 0;
     padding: 0;
 }
+html {
+
+}
 
 .hero{
     width: 100%;
@@ -71,8 +74,7 @@ html, body{
 }
 
 .third{
-    display: flex;
-    flex-direction: column;
+    display: flexbox;
 }
 .third div{
     width: 100%;
@@ -80,21 +82,15 @@ html, body{
 .sec5{
     display: flex;
 }
-.imagesholder1{
-    width: 40%;
-    margin: 2px auto;
+.sec5 div:first-child{
     display: flex;
     flex-direction: column;
     padding: 10px;
     box-shadow: 2p 2pc silver;
-    background-color: gainsboro;
-    /* background-color: #fff; */
+    background-color: #fff;
     border-radius: 3px;
     padding-left: 100px;
-    /* border: 1px solid black; */
-    align-items: right;
 }
-
 .sec5 div:first-child img{
     width: inherit;
     height: 50px;
@@ -106,11 +102,10 @@ html, body{
     background-repeat: no-repeat;
 }
 .img2{
-    width: 80%;
+    width: 100%;
     height: 130px;
     background-image: url("fastFood2.jpg");
     background-repeat: no-repeat;
-    /* float: rig; */
 }
 .img3{
     width: 100%;
@@ -138,12 +133,6 @@ html, body{
 
     
 }
-.sec5 div:first-child {
-    font-size: small;
-    text-align: right;
-
-    
-}
 .petty{
     color: #F15A29;
     border: 1px  solid #F15A29;
@@ -160,38 +149,82 @@ html, body{
 
 .fourth{
     width: 100%;
-    height: 400px;
+    height: 600px;
     background-image: url("backgrounds/foodsBg.jpg");
     background-repeat: no-repeat;
     display: flex;
 }
-.fourth div{
+.main{
     margin: auto;
     background-color: #fff;
-    height: 500px;
+    height:300px;
     border-radius: 3px;
     width: 60%;
     /* flex-direction: column; */
 }
-.toppers{
+
+.fourth div .toppers{
     display: flex;
-    width: 100%;
 
 }
-.toppers div{
+
+.fourth div .toppers div{
     width: 25%;
-    height: 40px;
-    background-color: gray;
-    color: white;
+    height: 50px;
+    text-align: center;
+    background: gainsboro;
+     display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    
 }
-.toppers div:first-child{
-    background-color: #fff;
-    color: #F15A29;
+.fourth div .toppers div:first-child{
+    
+    background: inherit;
 }
-.images{
+
+.mainImages {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* To evenly space the icons and images */
+}
+
+.mainImages div {
+    flex: 0 0 50px; /* Sets a fixed width of 50px for each div */
+    display: flex;
+    justify-content: center; /* Centers content horizontally within each div */
+    align-items: center; /* Centers content vertically within each div */
+}
+
+.mainImages img {
+    max-width: 200px; /* Ensures images don't exceed the div's width */
+    height: 200px; /* Maintains aspect ratio */
+}
+
+
+
+.fifth{
+    width: 100%;
+    height: 200px;
+}
+.fifthConatiner{
+    width: 70%;
+    height: 150px;
+    box-shadow: 0px 4px 6px gray;
+    margin: 15px auto;
     display: flex;
 }
-.images img{
-    width: 33%;
-    height: auto;
-}
+/*.fifthConatiner div h1{
+    color: #;
+}*/
+
+
+
+
+
+
+
+
+
+
